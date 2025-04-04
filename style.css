@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-    background-color: #fff;
+    background-color: #f5e1a4;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -58,6 +58,9 @@ button {
 h2 {
     text-align: center; /* Centraliza o título */
     margin-bottom: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 60px;
+    color: #493b1a;
 }
 header{
     font-family:'Times New Roman', Times, serif;
@@ -66,6 +69,10 @@ header{
     position: absolute;
     top: 0;
     left: 0;
+    color:#493b1a ;
     
 
+}
+body{
+    background-color: #2e7d32;
 }
