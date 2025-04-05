@@ -35,6 +35,8 @@ label {
     margin-bottom: 5px;
     display: block; /* Garante que os labels ocupem a largura total */
     text-align: left; /* Alinha o texto do label à esquerda */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 input {
@@ -63,7 +65,7 @@ h2 {
     color: #493b1a;
 }
 header{
-    font-family:'Times New Roman', Times, serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 35px;
     color:green;
     position: absolute;
@@ -75,4 +77,7 @@ header{
 }
 body{
     background-color: #2e7d32;
+    background-image: url("Fundopet.png");
+    background-position: center;
+      
 }
