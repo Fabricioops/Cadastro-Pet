@@ -3,15 +3,16 @@ border: 2px solid #000;
 }
 @font-face {
     font-family: 'CirceRounded-ExtraBold';
-    src: url('.CirceRounded-ExtraBold') format('truetype');
+    src: url('./fonts/CirceRounded-ExtraBold.otf') format('truetype');
   }
+  
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    background-color: #f0f0f0; /* Cor de fundo opcional */
+ 
 }
 
 .container {
@@ -64,17 +65,17 @@ button {
 h2 {
     text-align: center; /* Centraliza o título */
     margin-bottom: 20px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'CirceRounded-ExtraBold', sans-serif;
     font-size: 60px;
     color: #493b1a;
 }
 header{
-    font-family:Cir;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 60px;
     position: absolute;
-    top: 12px;
-    left: 600px;
-    color:#493b1a ;
+    top:0;
+    left:0;
+    color:#493b1a;
     
 
 }
@@ -84,3 +85,14 @@ body{
     background-position: center;
       
 }
+
+form label {
+    font-family: 'CirceRounded-ExtraBold', sans-serif; 
+    color:#493b1a ;
+
+}
+form input{
+    background-color: #dcc271;
+    
+}
+  
