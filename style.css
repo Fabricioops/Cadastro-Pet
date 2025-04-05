@@ -66,11 +66,10 @@ h2 {
 }
 header{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 35px;
-    color:green;
+    font-size: 60px;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 12px;
+    left: 600px;
     color:#493b1a ;
     
 
