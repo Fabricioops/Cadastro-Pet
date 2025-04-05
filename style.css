@@ -70,12 +70,13 @@ h2 {
     color: #493b1a;
 }
 header{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
     font-size: 60px;
     position: absolute;
     top:0;
     left:0;
-    color:#493b1a;
+    color:#201f1d;
+
     
 
 }
@@ -95,4 +96,5 @@ form input{
     background-color: #dcc271;
     
 }
+
   
