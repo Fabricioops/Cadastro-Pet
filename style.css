@@ -54,12 +54,13 @@ input {
 
 button {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #57aa49;
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     width: 100%; /* Garante que o botão ocupe a largura total */
+    
 }
 
 h2 {
@@ -96,5 +97,10 @@ form input{
     background-color: #dcc271;
     
 }
-
+button:hover {
+    background-color: #00ff08; /* Cor de fundo no hover */
+  color: #000000; /* Cor do texto no hover */
+  border-width: 4px; /* Aumenta a largura da borda no hover */
   
+  
+  }
