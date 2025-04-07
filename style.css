@@ -3,7 +3,7 @@ border: 2px solid #000;
 }
 @font-face {
     font-family: 'CirceRounded-ExtraBold';
-    src: url('./fonts/CirceRounded-ExtraBold.otf') format('truetype');
+    src: url('./fonts/CirceRounded-ExtraBold.otf') format('opentype');
   }
   
 body {
