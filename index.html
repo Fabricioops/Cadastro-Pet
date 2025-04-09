@@ -11,8 +11,8 @@
 <body>
     
     <header>🪪PetSocial ID</header>
-    <div class="container">
-        <form class="login-form">
+    <div  class="container">
+        <form id="login-form" class="login-form">
             <h2>REGPET</h2>
             <div class="form-group">
                 <label for="petName">Nome do PET</label>
@@ -34,6 +34,14 @@
             <button type="submit">Enviar</button>
         </form>
     </div>
+    <div id="carteirinha" style="display: none;">
+        <h2>Carteirinha Pet</h2>
+        <div class="card">
+          <div id="dadosPet"></div>
+        </div>
+        <button onclick = "voltar()">Voltar</button>
+      </div>
+      
     <script src="script.js"></script>
 </body>
 </html>

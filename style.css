@@ -102,5 +102,60 @@ button:hover {
   color: #000000; /* Cor do texto no hover */
   border-width: 4px; /* Aumenta a largura da borda no hover */
   
-  
+}
+#carteirinha {
+    text-align: center;
+    padding: 2rem;
   }
+  
+  #carteirinha h2 {
+    font-size: 2rem;
+    color: #4b2e2e;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  /* Estilo do cartão */
+  .card {
+    background-color: #ffefc2;
+    width: 320px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+  }
+  
+  .card p {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+  }
+  
+  /* Botão voltar */
+  #carteirinha button {
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #carteirinha button:hover {
+    background-color: #3e8e41;
+  }
+
+  
+  
+ 
+
+  
