@@ -19,7 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {// Isso garante que t
     `;
 
     form.style.display = 'none';                           //esconde o formulario
-    carteirinha.style.display = 'block';                   //mostra a carteirinha 
+    carteirinha.style.display = 'block';                   //mostra a carteirinha
+    container.style.display = 'none';                
   });
 });
 
@@ -28,4 +29,6 @@ function voltar() {                                         //função para volt
   const carteirinha = document.getElementById('carteirinha');
   carteirinha.style.display = 'none';
   form.style.display = 'block';
+  container.style.display = 'block'; // MOSTRA A CONTAINER NOVAMENTE
+  
 }
