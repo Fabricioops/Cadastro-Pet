@@ -30,5 +30,5 @@ function voltar() {                                         //função para volt
   carteirinha.style.display = 'none';
   form.style.display = 'block';
   container.style.display = 'block'; // MOSTRA A CONTAINER NOVAMENTE
-  
+  form.reset();
 }

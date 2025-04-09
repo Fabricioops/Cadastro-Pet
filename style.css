@@ -106,13 +106,14 @@ button:hover {
 #carteirinha {
     text-align: center;
     padding: 2rem;
+   
   }
   
-  #carteirinha h2 {
-    font-size: 2rem;
-    color: #4b2e2e;
-    margin-bottom: 1rem;
-    font-weight: bold;
+  .titulo-carteirinha{
+    font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
   }
   
   /* Estilo do cartão */
@@ -122,10 +123,11 @@ button:hover {
     margin: 0 auto;
     padding: 1.5rem;
     border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     text-align: left;
     font-family: 'Arial', sans-serif;
     transition: transform 0.3s ease;
+    border: 4px solid #5d4c1f;
+    
   }
   
   .card:hover {
@@ -135,6 +137,8 @@ button:hover {
   .card p {
     margin: 0.5rem 0;
     font-size: 1.1rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #493b1a;
   }
   
   /* Botão voltar */
@@ -142,7 +146,7 @@ button:hover {
     margin-top: 1rem;
     padding: 0.5rem 1.5rem;
     font-size: 1rem;
-    background-color: #4CAF50;
+    background-color: #0f5011;
     color: white;
     border: none;
     border-radius: 8px;
