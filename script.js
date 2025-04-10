@@ -11,8 +11,11 @@ document.addEventListener("DOMContentLoaded", function () {// Isso garante que t
     const idade = document.getElementById('age').value;  //captura o valor de cada campo e salva na variavel
     const nomeDono = document.getElementById('ownerName').value;  //captura o valor de cada campo e salva na variavel
 
+   let geradorId = Math.floor(Math.random() * 100000000)
+
     dadosPet.innerHTML =                                      //altera os dados do formulario para exibir a carteirinha
-     ` <p><strong>Nome do Pet:</strong> ${nomePet}</p>
+     `<p><strong>Nº de Registro Pet</strong> ${geradorId}</p>
+     <p><strong>Nome do Pet:</strong> ${nomePet}</p>
       <p><strong>Espécie:</strong> ${especie}</p>
       <p><strong>Idade:</strong> ${idade}</p>
       <p><strong>Nome do Dono:</strong> ${nomeDono}</p>

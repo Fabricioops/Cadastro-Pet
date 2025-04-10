@@ -8,11 +8,10 @@ async function criarEpopularTabelaUsuarios(nome,sobrenome){
 
     });
 
-    db.run(`CREATE TABLE IF NOT EXISTS  usuarios(id INTEGER PRIMARY KEY, nome TEXT, sobrenome TEXT)`); //cria tabela caso el
+await db.run(`CREATE TABLE IF NOT EXISTS  Pets (id INTEGER PRIMARY KEY, petName TEXT, idade INTEGER, especie TEXT,nomeDono TEXT )`); //cria tabela caso el
     
-    db.run(`INSERT INTO usuarios(nome,sobrenome) VALUES(?,?)`,[nome,sobrenome])
+    
 
-    db.run(` DELETE FROM usuarios`);
     
 
 }
