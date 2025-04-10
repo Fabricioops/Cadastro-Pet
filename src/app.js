@@ -27,6 +27,35 @@ async function criarTabela() {
     `);
 
 
-    
+
   }
+  app.post('/api/pets', async (req, res) => {
+    // Desestrutura os dados recebidos no corpo da requisição
+    const { nomePet, especie, idade, nomeDono } = req.body;
+  
+    try {
+      const db = await openDb();   // Abre a conexão com o banco
+  
+      // Insere os dados na tabela usando placeholders seguros contra SQL Injection
+      await db.run(
+        'INSERT INTO pets (nomePet, especie, idade, nomeDono) VALUES (?, ?, ?, ?)',
+        [nomePet, especie, idade, nomeDono]
+      );
+  
+      // Retorna uma resposta de sucesso
+      res.status(201).json({ mensagem: 'Pet cadastrado com sucesso!' });
+    } catch (error) {
+      // Se ocorrer erro, mostra no console e envia erro para o cliente
+      console.error('Erro ao salvar no banco:', error);
+      res.status(500).json({ erro: 'Erro ao cadastrar pet' });
+    }
+  });
+  
+  
+  // --------------------------- INICIAR SERVIDOR ---------------------------
+  
+  // Inicia o servidor na porta definida e exibe mensagem no terminal
+  app.listen(port, () => {
+    console.log(`Servidor rodando em http://localhost:${port}`);
+  });
   
