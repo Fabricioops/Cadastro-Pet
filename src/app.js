@@ -12,18 +12,21 @@ app.use(cors());  //// Permite que o frontend acesse esse backend mesmo se estiv
 
 async function criarTabela() {
     const db = await open({            // Abre conexão com o banco
-      filename: '../Banco.db',
+      filename: './Banco.db',
       driver: sqlite3.Database
     });
   
     await db.exec(`                   // Executa o comando SQL
-      CREATE TABLE IF NOT EXISTS pets (
+      CREATE TABLE IF NOT EXISTS Pets (
         id INTEGER PRIMARY KEY, -- ID único
-        nomePet TEXT,                         -- Nome do pet
-        especie TEXT,                         -- Espécie
+        nomePet VARCHAR,                         -- Nome do pet
+        especie VARCHAR,                         -- Espécie
         idade INTEGER,                        -- Idade
-        nomeDono TEXT                         -- Nome do dono
+        nomeDono VARCHAR                         -- Nome do dono
       )
     `);
+
+
+    
   }
   
