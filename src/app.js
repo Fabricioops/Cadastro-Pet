@@ -12,7 +12,7 @@ app.use(cors());  //// Permite que o frontend acesse esse backend mesmo se estiv
 
 async function criarTabela() {
     const db = await open({            // Abre conexão com o banco
-      filename: './Banco.db',
+      filename: '../Banco.db',
       driver: sqlite3.Database
     });
   
