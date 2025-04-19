@@ -17,7 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     try {
       // Envia os dados para o backend via fetch
-      const response = await fetch('http://localhost:5500/api/pets', {
+      const response = await fetch('http://localhost:5500/api/pets', { ////// O ERROR ESTA AQUI //////  
+
         method: 'POST',
         headers: {
           'Content-Type': 'application/json' // Define o tipo do conteúdo
@@ -40,7 +41,6 @@ document.addEventListener("DOMContentLoaded", function () {
         // Atualiza o HTML da carteirinha com os dados do pet
         dadosPet.innerHTML = `
           <h2 style="background-color:#007BFF; color:white; padding:10px; border-radius:10px;">Carteirinha Pet</h2>
-          <p><strong>Nº de Registro Pet:</strong> ${geradorId}</p>
           <p><strong>Nome do Pet:</strong> ${nomePet}</p>
           <p><strong>Espécie:</strong> ${especie}</p>
           <p><strong>Idade:</strong> ${idade}</p>
