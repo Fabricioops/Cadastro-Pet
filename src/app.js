@@ -46,8 +46,9 @@ app.post('/api/pets', async (req, res) => {
       'INSERT INTO Pets (nomePet, especie, idade, nomeDono) VALUES (?, ?, ?, ?)',
       [nomePet, especie, idade, nomeDono]
     );
+   
     
-    res.status(201).json({ mensagem: 'Pet cadastrado com sucesso!', id: petId });
+    res.status(200).json({ mensagem: 'Pet cadastrado com sucesso!'});
     
   } catch (error) {
     console.error('Erro ao salvar no banco:', error);
