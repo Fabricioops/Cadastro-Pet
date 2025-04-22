@@ -47,9 +47,6 @@ app.post('/api/pets', async (req, res) => {
       [nomePet, especie, idade, nomeDono]
     );
     
-    // AQUI pegamos o ID do novo pet:
-    const petId = result.lastID;
-    
     res.status(201).json({ mensagem: 'Pet cadastrado com sucesso!', id: petId });
     
   } catch (error) {
