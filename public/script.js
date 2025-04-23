@@ -40,7 +40,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Exibe a carteirinha com os dados
         dadosPet.innerHTML = `
-          <h2 style="background-color:#007BFF; color:white; padding:10px; border-radius:10px;">Carteirinha Pet</h2>
           <p><strong>Nome do Pet:</strong> ${nomePet}</p>
           <p><strong>Espécie:</strong> ${especie}</p>
           <p><strong>Idade:</strong> ${idade}</p>
