@@ -68,7 +68,7 @@ h2 {
     margin-bottom: 20px;
     font-family:'CirceRounded-ExtraBold', sans-serif;
     font-size: 60px;
-    color: #493b1a;
+    color: #493b1a;                                      /*ok*/
 }
 header{
     font-weight: bold;
