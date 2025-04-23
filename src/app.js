@@ -4,13 +4,10 @@ import cors from 'cors';
 import { open } from 'sqlite';
 
 const app = express();
-const port = 5500;
+const port = 8081;
 
 app.use(express.json());
 app.use(cors());
-
-app.use(express.static('public')); // Serve os arquivos HTML, CSS e JS do frontend 
-
 
 async function criarTabela() {
   const db = await open({
@@ -29,10 +26,9 @@ async function criarTabela() {
   `);
 }
 
-
 criarTabela();
 
-// ROTA POST
+// ✅ ROTA POST - DEIXE ANTES do `static`
 app.post('/api/pets', async (req, res) => {
   const { nomePet, especie, idade, nomeDono } = req.body;
 
@@ -46,17 +42,19 @@ app.post('/api/pets', async (req, res) => {
       'INSERT INTO Pets (nomePet, especie, idade, nomeDono) VALUES (?, ?, ?, ?)',
       [nomePet, especie, idade, nomeDono]
     );
-   
-    
-    res.status(200).json({ mensagem: 'Pet cadastrado com sucesso!'});
-    
+
+    res.status(201).json({ mensagem: 'Pet cadastrado com sucesso!' });
+
   } catch (error) {
     console.error('Erro ao salvar no banco:', error);
     res.status(500).json({ erro: 'Erro ao cadastrar pet' });
   }
 });
 
+//  AQUI você serve os arquivos estáticos
+app.use(express.static('public'));
+
 // INICIA O SERVIDOR
 app.listen(port, () => {
-  console.log(`Servidor rodando em http://localhost:${port}/api/pets`);
+  console.log(`Servidor rodando em http://localhost:${port}`);
 });
