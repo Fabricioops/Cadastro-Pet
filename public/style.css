@@ -72,11 +72,12 @@ h2 {
 }
 header{
     font-weight: bold;
+    font-family: 'CirceRounded-ExtraBold', sans-serif;
     font-size: 60px;
     position: absolute;
     top:0;
     left:0;
-    color:#201f1d;
+    color:#493b1a;
 
     
 
