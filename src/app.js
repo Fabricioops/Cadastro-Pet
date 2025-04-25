@@ -35,8 +35,18 @@ app.post('/api/pets', async (req, res) => {
   try {
     const db = await open({
       filename: './Banco.db',
-      driver: sqlite3.Database
+      driver: sqlite3.Database  
     });
+    const petExistente = await db.get(   // Verifica se já existe um pet com o mesmo nome e dono--------------------------------------------------------
+      'SELECT * FROM Pets WHERE nomePet = ? AND nomeDono = ?',
+      [nomePet, nomeDono]
+    );
+    
+    if (petExistente) {
+      return res.status(400).json({ mensagem: 'Pet já cadastrado para esse dono.' });
+    }
+    
+
 
     const result = await db.run(
       'INSERT INTO Pets (nomePet, especie, idade, nomeDono) VALUES (?, ?, ?, ?)',
