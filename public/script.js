@@ -34,6 +34,11 @@ document.addEventListener("DOMContentLoaded", function () {
           nomeDono
         })
       });
+      if (response.status === 400) {
+        const data = await response.json();
+        alert(data.mensagem); // mostra "Pet já cadastrado para esse dono."
+        return;
+      }
 
       if (response.ok) {
         const resultado = await response.json();
